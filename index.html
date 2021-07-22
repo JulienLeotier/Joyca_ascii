@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        #test1 span {
+            opacity: 1;
+        }
+        
+        #test1 b {
+            opacity: 0;
+        }
+        
+        #test2 span {
+            opacity: 0;
+        }
+        
+        #test2 b {
+            opacity: 1;
+        }
+        
+        #test3 span {
+            opacity: 1;
+        }
+        
+        #test3 b {
+            opacity: 0;
+        }
+        
+        #test4 span {
+            opacity: 0;
+        }
+        
+        #test4 b {
+            opacity: 1;
+        }
+    </style>
+
+    <h1>Enigme Joyca test ASCII en binaire</h1>
+    <h5>test n°1: EXCEL BRUT (APOLO-GIE ... etc) avec 0</h5>
+    <p style="width: 286px; overflow-wrap: break-word; margin: 0; text-align: center;" id="test1">
+        <span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span><span>0</span><b>1</b>
+        <span>0</span><b>1</b><span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span>
+        <span>0</span><b>1</b><span>0</span><span>0</span><b>1</b><b>1</b><b>1</b><b>1</b>
+        <span>0</span><b>1</b><span>0</span><span>0</span><b>1</b><b>1</b><span>0</span><span>0</span>
+        <span>0</span><b>1</b><span>0</span><span>0</span><b>1</b><b>1</b><b>1</b><b>1</b>
+        <span>0</span><span>0</span><b>1</b><span>0</span><b>1</b><b>1</b><span>0</span><b>1</b>
+        <span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><b>1</b><b>1</b><b>1</b>
+        <span>0</span><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span><span>0</span><b>1</b>
+        <span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b>
+        <span>0</span><span>0</span><span>0</span><span>0</span><b>1</b><b>1</b><span>0</span><b>1</b>
+        <span>0</span><span>0</span><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b><span>0</span>
+        <span>0</span><span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><b>1</b><span>0</span>
+        <span>0</span><span>0</span><span>0</span><span>0</span><b>1</b><b>1</b><span>0</span><b>1</b>
+        <span>0</span><span>0</span><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b><span>0</span>
+        <span>0</span><b>1</b><span>0</span><span>0</span><b>1</b><b>1</b><span>0</span><span>0</span>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b>
+        <span>0</span><span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span><span>0</span>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><span>0</span><b>1</b><b>1</b>
+        <span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><b>1</b><span>0</span><span>0</span>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><b>1</b><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span>
+        <span>0</span><span>0</span><span>0</span><span>0</span><b>1</b><b>1</b><span>0</span><b>1</b>
+        <span>0</span><span>0</span><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b><span>0</span>
+        <span>0</span><b>1</b><span>0</span><b>1</b><span>0</span><b>1</b><span>0</span><span>0</span>
+        <span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><b>1</b><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><b>1</b><span>0</span>
+        <span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><span>0</span><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><span>0</span><b>1</b><span>0</span><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><span>0</span><b>1</b><span>0</span>
+        <span>0</span><b>1</b><b>1</b><span>0</span><b>1</b><b>1</b><b>1</b><b>1</b>
+        <span>0</span><b>1</b><b>1</b><span>0</span><b>1</b><span>0</span><b>1</b><span>0</span>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><b>1</b><span>0</span>
+        <span>0</span><span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span><span>0</span>
+        <span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span><b>1</b><b>1</b>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><b>1</b><span>0</span>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><span>0</span><b>1</b><span>0</span>
+        <span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><b>1</b>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b>
+        <span>0</span><span>0</span><span>0</span><span>0</span><b>1</b><b>1</b><span>0</span><b>1</b>
+        <span>0</span><span>0</span><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b><span>0</span>
+        <span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><span>0</span><b>1</b><b>1</b><b>1</b><span>0</span>
+        <span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><b>1</b><span>0</span><span>0</span>
+        <span>0</span><b>1</b><b>1</b><span>0</span><b>1</b><span>0</span><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span>
+        <span>0</span><b>1</b><b>1</b><span>0</span><b>1</b><span>0</span><span>0</span><span>0</span>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><b>1</b><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><b>1</b><span>0</span><span>0</span>
+        <span>0</span><span>0</span><span>0</span><span>0</span><b>1</b><b>1</b><span>0</span><b>1</b>
+        <span>0</span><span>0</span><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b><span>0</span>
+        <span>0</span><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b><b>1</b>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><span>0</span><b>1</b><span>0</span><b>1</b><b>1</b>
+        <span>0</span><span>0</span><span>0</span><span>0</span><b>1</b><b>1</b><span>0</span><b>1</b>
+        <span>0</span><span>0</span><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b><span>0</span>
+        <span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><b>1</b><b>1</b><b>1</b>
+        <span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span>
+        <span>0</span><b>1</b><b>1</b><span>0</span><b>1</b><b>1</b><b>1</b><b>1</b>
+        <span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><b>1</b><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b>
+        <span>0</span><span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span><span>0</span>
+        <span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><b>1</b><span>0</span><span>0</span>
+        <span>0</span><span>0</span><b>1</b><span>0</span><span>0</span><b>1</b><b>1</b><b>1</b>
+        <span>0</span><b>1</b><b>1</b><span>0</span><b>1</b><span>0</span><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><span>0</span><b>1</b><b>1</b><b>1</b><span>0</span>
+        <span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><b>1</b><span>0</span><span>0</span>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span>
+        <span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><b>1</b><b>1</b><span>0</span>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><span>0</span><b>1</b><b>1</b><b>1</b><span>0</span>
+        <span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><b>1</b><span>0</span><span>0</span>
+        <span>0</span><b>1</b><b>1</b><span>0</span><b>1</b><span>0</span><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><span>0</span><b>1</b><b>1</b><b>1</b><b>1</b>
+        <span>0</span><b>1</b><b>1</b><span>0</span><b>1</b><b>1</b><b>1</b><span>0</span>
+        <span>0</span><span>0</span><span>0</span><span>0</span><b>1</b><b>1</b><span>0</span><b>1</b>
+        <span>0</span><span>0</span><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b><span>0</span>
+        <span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><b>1</b><b>1</b><span>0</span>
+        <span>0</span><b>1</b><span>0</span><span>0</span><b>1</b><b>1</b><span>0</span><span>0</span>
+        <span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b>
+        <span>0</span><span>0</span><b>1</b><span>0</span><b>1</b><b>1</b><span>0</span><span>0</span>
+        <span>0</span><span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span><span>0</span>
+        <span>0</span><b>1</b><span>0</span><b>1</b><span>0</span><b>1</b><b>1</b><b>1</b>
+        <span>0</span><b>1</b><span>0</span><b>1</b><span>0</span><b>1</b><span>0</span><b>1</b>
+        <span>0</span><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span><span>0</span><span>0</span>
+        <span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span><span>0</span><b>1</b>
+        <span>0</span><b>1</b><span>0</span><span>0</span><b>1</b><b>1</b><b>1</b><span>0</span>
+        <span>0</span><span>0</span><b>1</b><span>0</span><b>1</b><b>1</b><span>0</span><span>0</span>
+        <span>0</span><span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span><span>0</span>
+        <span>0</span><b>1</b><span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span>
+        <span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span><span>0</span><b>1</b>
+        <span>0</span><b>1</b><span>0</span><span>0</span><b>1</b><b>1</b><b>1</b><span>0</span>
+        <span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b>
+        <span>0</span><b>1</b><span>0</span><span>0</span><b>1</b><b>1</b><b>1</b><span>0</span>
+        <span>0</span><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b><b>1</b>
+        <span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span><span>0</span><b>1</b>
+    </p>
+
+    <h5>test n°2: EXCEL BRUT (APOLO-GIE ... etc) avec 1</H5>
+    <p style="width: 286px; overflow-wrap: break-word; margin: 0; text-align: center;" id="test2">
+        <span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span><span>0</span><b>1</b>
+        <span>0</span><b>1</b><span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span>
+        <span>0</span><b>1</b><span>0</span><span>0</span><b>1</b><b>1</b><b>1</b><b>1</b>
+        <span>0</span><b>1</b><span>0</span><span>0</span><b>1</b><b>1</b><span>0</span><span>0</span>
+        <span>0</span><b>1</b><span>0</span><span>0</span><b>1</b><b>1</b><b>1</b><b>1</b>
+        <span>0</span><span>0</span><b>1</b><span>0</span><b>1</b><b>1</b><span>0</span><b>1</b>
+        <span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><b>1</b><b>1</b><b>1</b>
+        <span>0</span><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span><span>0</span><b>1</b>
+        <span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b>
+        <span>0</span><span>0</span><span>0</span><span>0</span><b>1</b><b>1</b><span>0</span><b>1</b>
+        <span>0</span><span>0</span><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b><span>0</span>
+        <span>0</span><span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><b>1</b><span>0</span>
+        <span>0</span><span>0</span><span>0</span><span>0</span><b>1</b><b>1</b><span>0</span><b>1</b>
+        <span>0</span><span>0</span><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b><span>0</span>
+        <span>0</span><b>1</b><span>0</span><span>0</span><b>1</b><b>1</b><span>0</span><span>0</span>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b>
+        <span>0</span><span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span><span>0</span>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><span>0</span><b>1</b><b>1</b>
+        <span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><b>1</b><span>0</span><span>0</span>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><b>1</b><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span>
+        <span>0</span><span>0</span><span>0</span><span>0</span><b>1</b><b>1</b><span>0</span><b>1</b>
+        <span>0</span><span>0</span><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b><span>0</span>
+        <span>0</span><b>1</b><span>0</span><b>1</b><span>0</span><b>1</b><span>0</span><span>0</span>
+        <span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><b>1</b><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><b>1</b><span>0</span>
+        <span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><span>0</span><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><span>0</span><b>1</b><span>0</span><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><span>0</span><b>1</b><span>0</span>
+        <span>0</span><b>1</b><b>1</b><span>0</span><b>1</b><b>1</b><b>1</b><b>1</b>
+        <span>0</span><b>1</b><b>1</b><span>0</span><b>1</b><span>0</span><b>1</b><span>0</span>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><b>1</b><span>0</span>
+        <span>0</span><span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span><span>0</span>
+        <span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span><b>1</b><b>1</b>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><b>1</b><span>0</span>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><span>0</span><b>1</b><span>0</span>
+        <span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><b>1</b>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b>
+        <span>0</span><span>0</span><span>0</span><span>0</span><b>1</b><b>1</b><span>0</span><b>1</b>
+        <span>0</span><span>0</span><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b><span>0</span>
+        <span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><span>0</span><b>1</b><b>1</b><b>1</b><span>0</span>
+        <span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><b>1</b><span>0</span><span>0</span>
+        <span>0</span><b>1</b><b>1</b><span>0</span><b>1</b><span>0</span><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span>
+        <span>0</span><b>1</b><b>1</b><span>0</span><b>1</b><span>0</span><span>0</span><span>0</span>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><b>1</b><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><b>1</b><span>0</span><span>0</span>
+        <span>0</span><span>0</span><span>0</span><span>0</span><b>1</b><b>1</b><span>0</span><b>1</b>
+        <span>0</span><span>0</span><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b><span>0</span>
+        <span>0</span><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b><b>1</b>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><span>0</span><b>1</b><span>0</span><b>1</b><b>1</b>
+        <span>0</span><span>0</span><span>0</span><span>0</span><b>1</b><b>1</b><span>0</span><b>1</b>
+        <span>0</span><span>0</span><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b><span>0</span>
+        <span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><b>1</b><b>1</b><b>1</b>
+        <span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span>
+        <span>0</span><b>1</b><b>1</b><span>0</span><b>1</b><b>1</b><b>1</b><b>1</b>
+        <span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><b>1</b><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b>
+        <span>0</span><span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span><span>0</span>
+        <span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><b>1</b><span>0</span><span>0</span>
+        <span>0</span><span>0</span><b>1</b><span>0</span><span>0</span><b>1</b><b>1</b><b>1</b>
+        <span>0</span><b>1</b><b>1</b><span>0</span><b>1</b><span>0</span><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><span>0</span><b>1</b><b>1</b><b>1</b><span>0</span>
+        <span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><b>1</b><span>0</span><span>0</span>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span>
+        <span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><b>1</b><b>1</b><span>0</span>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><span>0</span><b>1</b><b>1</b><b>1</b><span>0</span>
+        <span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><b>1</b><span>0</span><span>0</span>
+        <span>0</span><b>1</b><b>1</b><span>0</span><b>1</b><span>0</span><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><span>0</span><b>1</b><b>1</b><b>1</b><b>1</b>
+        <span>0</span><b>1</b><b>1</b><span>0</span><b>1</b><b>1</b><b>1</b><span>0</span>
+        <span>0</span><span>0</span><span>0</span><span>0</span><b>1</b><b>1</b><span>0</span><b>1</b>
+        <span>0</span><span>0</span><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b><span>0</span>
+        <span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><b>1</b><b>1</b><span>0</span>
+        <span>0</span><b>1</b><span>0</span><span>0</span><b>1</b><b>1</b><span>0</span><span>0</span>
+        <span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b>
+        <span>0</span><span>0</span><b>1</b><span>0</span><b>1</b><b>1</b><span>0</span><span>0</span>
+        <span>0</span><span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span><span>0</span>
+        <span>0</span><b>1</b><span>0</span><b>1</b><span>0</span><b>1</b><b>1</b><b>1</b>
+        <span>0</span><b>1</b><span>0</span><b>1</b><span>0</span><b>1</b><span>0</span><b>1</b>
+        <span>0</span><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span><span>0</span><span>0</span>
+        <span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span><span>0</span><b>1</b>
+        <span>0</span><b>1</b><span>0</span><span>0</span><b>1</b><b>1</b><b>1</b><span>0</span>
+        <span>0</span><span>0</span><b>1</b><span>0</span><b>1</b><b>1</b><span>0</span><span>0</span>
+        <span>0</span><span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span><span>0</span>
+        <span>0</span><b>1</b><span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span>
+        <span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span><span>0</span><b>1</b>
+        <span>0</span><b>1</b><span>0</span><span>0</span><b>1</b><b>1</b><b>1</b><span>0</span>
+        <span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b>
+        <span>0</span><b>1</b><span>0</span><span>0</span><b>1</b><b>1</b><b>1</b><span>0</span>
+        <span>0</span><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b><b>1</b>
+        <span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span><span>0</span><b>1</b>
+    </p>
+
+    <h5>test n°3: EXCEL MODIFIER (POLO-GIE ... etc) avec 0</h5>
+    <p style="width: 286px; overflow-wrap: break-word; margin: 0; text-align: center;" id="test3">
+        <span>0</span><b>1</b><span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span>
+        <span>0</span><b>1</b><span>0</span><span>0</span><b>1</b><b>1</b><b>1</b><b>1</b>
+        <span>0</span><b>1</b><span>0</span><span>0</span><b>1</b><b>1</b><span>0</span><span>0</span>
+        <span>0</span><b>1</b><span>0</span><span>0</span><b>1</b><b>1</b><b>1</b><b>1</b>
+        <span>0</span><span>0</span><b>1</b><span>0</span><b>1</b><b>1</b><span>0</span><b>1</b>
+        <span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><b>1</b><b>1</b><b>1</b>
+        <span>0</span><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span><span>0</span><b>1</b>
+        <span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b>
+        <span>0</span><span>0</span><span>0</span><span>0</span><b>1</b><b>1</b><span>0</span><b>1</b>
+        <span>0</span><span>0</span><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b><span>0</span>
+        <span>0</span><span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><b>1</b><span>0</span>
+        <span>0</span><span>0</span><span>0</span><span>0</span><b>1</b><b>1</b><span>0</span><b>1</b>
+        <span>0</span><span>0</span><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b><span>0</span>
+        <span>0</span><b>1</b><span>0</span><b>1</b><span>0</span><b>1</b><span>0</span><span>0</span>
+        <span>0</span><b>1</b><b>1</b><span>0</span><b>1</b><span>0</span><span>0</span><span>0</span>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b>
+        <span>0</span><span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span><span>0</span>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><span>0</span><b>1</b><b>1</b>
+        <span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><b>1</b><span>0</span><span>0</span>
+        <span>0</span><b>1</b><b>1</b><span>0</span><b>1</b><b>1</b><b>1</b><b>1</b>
+        <span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span>
+        <span>0</span><span>0</span><span>0</span><span>0</span><b>1</b><b>1</b><span>0</span><b>1</b>
+        <span>0</span><span>0</span><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b><span>0</span>
+        <span>0</span><b>1</b><span>0</span><b>1</b><span>0</span><span>0</span><b>1</b><b>1</b>
+        <span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><b>1</b><span>0</span><span>0</span>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span>
+        <span>0</span><b>1</b><b>1</b><span>0</span><b>1</b><span>0</span><span>0</span><span>0</span>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><span>0</span><b>1</b><b>1</b><b>1</b><span>0</span>
+        <span>0</span><b>1</b><b>1</b><span>0</span><b>1</b><span>0</span><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b>
+        <span>0</span><span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span><span>0</span>
+        <span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span><b>1</b><span>0</span>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span><span>0</span>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span><span>0</span>
+        <span>0</span><span>0</span><span>0</span><span>0</span><b>1</b><b>1</b><span>0</span><b>1</b>
+        <span>0</span><span>0</span><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b><span>0</span>
+        <span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span><b>1</b><span>0</span>
+        <span>0</span><b>1</b><b>1</b><span>0</span><b>1</b><b>1</b><b>1</b><b>1</b>
+        <span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><b>1</b><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><b>1</b><span>0</span><span>0</span>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><span>0</span><b>1</b><span>0</span>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><b>1</b>
+        <span>0</span><span>0</span><span>0</span><span>0</span><b>1</b><b>1</b><span>0</span><b>1</b>
+        <span>0</span><span>0</span><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b><span>0</span>
+        <span>0</span><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b><b>1</b>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><span>0</span><b>1</b><b>1</b><b>1</b><span>0</span>
+        <span>0</span><b>1</b><b>1</b><span>0</span><b>1</b><b>1</b><b>1</b><b>1</b>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b>
+        <span>0</span><span>0</span><span>0</span><span>0</span><b>1</b><b>1</b><span>0</span><b>1</b>
+        <span>0</span><span>0</span><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b><span>0</span>
+        <span>0</span><b>1</b><span>0</span><b>1</b><span>0</span><span>0</span><b>1</b><b>1</b>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><span>0</span><b>1</b><b>1</b>
+        <span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><b>1</b><span>0</span><span>0</span>
+        <span>0</span><b>1</b><b>1</b><span>0</span><b>1</b><span>0</span><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><span>0</span><b>1</b><b>1</b><b>1</b><b>1</b>
+        <span>0</span><b>1</b><b>1</b><span>0</span><b>1</b><b>1</b><b>1</b><span>0</span>
+        <span>0</span><span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span><span>0</span>
+        <span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><b>1</b><span>0</span><span>0</span>
+        <span>0</span><span>0</span><b>1</b><span>0</span><span>0</span><b>1</b><b>1</b><b>1</b>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><b>1</b>
+        <span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><b>1</b>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><b>1</b><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><b>1</b><span>0</span><span>0</span>
+        <span>0</span><span>0</span><span>0</span><span>0</span><b>1</b><b>1</b><span>0</span><b>1</b>
+        <span>0</span><span>0</span><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b><span>0</span>
+        <span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span><span>0</span><b>1</b>
+        <span>0</span><b>1</b><span>0</span><span>0</span><b>1</b><b>1</b><span>0</span><span>0</span>
+        <span>0</span><b>1</b><span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span>
+        <span>0</span><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span><span>0</span><span>0</span>
+        <span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span><span>0</span><b>1</b>
+        <span>0</span><span>0</span><b>1</b><span>0</span><b>1</b><b>1</b><span>0</span><span>0</span>
+        <span>0</span><span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span><span>0</span>
+        <span>0</span><b>1</b><span>0</span><b>1</b><span>0</span><b>1</b><b>1</b><b>1</b>
+        <span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span><span>0</span><b>1</b>
+        <span>0</span><b>1</b><span>0</span><span>0</span><b>1</b><b>1</b><b>1</b><span>0</span>
+        <span>0</span><b>1</b><span>0</span><span>0</span><b>1</b><b>1</b><b>1</b><span>0</span>
+        <span>0</span><span>0</span><b>1</b><span>0</span><b>1</b><b>1</b><span>0</span><span>0</span>
+        <span>0</span><span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span><span>0</span>
+        <span>0</span><b>1</b><span>0</span><span>0</span><b>1</b><b>1</b><b>1</b><span>0</span>
+        <span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b>
+        <span>0</span><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b><b>1</b>
+        <span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><b>1</b><b>1</b><span>0</span>
+        <span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b>
+        <span>0</span><b>1</b><span>0</span><b>1</b><span>0</span><b>1</b><span>0</span><b>1</b>
+    </p>
+
+    <h5>test n°4: EXCEL MODIFIER (POLO-GIE ... etc) avec 1</h5>
+    <p style="width: 286px; overflow-wrap: break-word; margin: 0; text-align: center;" id="test4">
+        <span>0</span><b>1</b><span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span>
+        <span>0</span><b>1</b><span>0</span><span>0</span><b>1</b><b>1</b><b>1</b><b>1</b>
+        <span>0</span><b>1</b><span>0</span><span>0</span><b>1</b><b>1</b><span>0</span><span>0</span>
+        <span>0</span><b>1</b><span>0</span><span>0</span><b>1</b><b>1</b><b>1</b><b>1</b>
+        <span>0</span><span>0</span><b>1</b><span>0</span><b>1</b><b>1</b><span>0</span><b>1</b>
+        <span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><b>1</b><b>1</b><b>1</b>
+        <span>0</span><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span><span>0</span><b>1</b>
+        <span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b>
+        <span>0</span><span>0</span><span>0</span><span>0</span><b>1</b><b>1</b><span>0</span><b>1</b>
+        <span>0</span><span>0</span><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b><span>0</span>
+        <span>0</span><span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><b>1</b><span>0</span>
+        <span>0</span><span>0</span><span>0</span><span>0</span><b>1</b><b>1</b><span>0</span><b>1</b>
+        <span>0</span><span>0</span><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b><span>0</span>
+        <span>0</span><b>1</b><span>0</span><b>1</b><span>0</span><b>1</b><span>0</span><span>0</span>
+        <span>0</span><b>1</b><b>1</b><span>0</span><b>1</b><span>0</span><span>0</span><span>0</span>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b>
+        <span>0</span><span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span><span>0</span>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><span>0</span><b>1</b><b>1</b>
+        <span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><b>1</b><span>0</span><span>0</span>
+        <span>0</span><b>1</b><b>1</b><span>0</span><b>1</b><b>1</b><b>1</b><b>1</b>
+        <span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span>
+        <span>0</span><span>0</span><span>0</span><span>0</span><b>1</b><b>1</b><span>0</span><b>1</b>
+        <span>0</span><span>0</span><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b><span>0</span>
+        <span>0</span><b>1</b><span>0</span><b>1</b><span>0</span><span>0</span><b>1</b><b>1</b>
+        <span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><b>1</b><span>0</span><span>0</span>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span>
+        <span>0</span><b>1</b><b>1</b><span>0</span><b>1</b><span>0</span><span>0</span><span>0</span>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><span>0</span><b>1</b><b>1</b><b>1</b><span>0</span>
+        <span>0</span><b>1</b><b>1</b><span>0</span><b>1</b><span>0</span><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b>
+        <span>0</span><span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span><span>0</span>
+        <span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span><b>1</b><span>0</span>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span><span>0</span>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span><span>0</span>
+        <span>0</span><span>0</span><span>0</span><span>0</span><b>1</b><b>1</b><span>0</span><b>1</b>
+        <span>0</span><span>0</span><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b><span>0</span>
+        <span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span><b>1</b><span>0</span>
+        <span>0</span><b>1</b><b>1</b><span>0</span><b>1</b><b>1</b><b>1</b><b>1</b>
+        <span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><b>1</b><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><b>1</b><span>0</span><span>0</span>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><span>0</span><b>1</b><span>0</span>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><b>1</b>
+        <span>0</span><span>0</span><span>0</span><span>0</span><b>1</b><b>1</b><span>0</span><b>1</b>
+        <span>0</span><span>0</span><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b><span>0</span>
+        <span>0</span><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b><b>1</b>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><span>0</span><b>1</b><b>1</b><b>1</b><span>0</span>
+        <span>0</span><b>1</b><b>1</b><span>0</span><b>1</b><b>1</b><b>1</b><b>1</b>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b>
+        <span>0</span><span>0</span><span>0</span><span>0</span><b>1</b><b>1</b><span>0</span><b>1</b>
+        <span>0</span><span>0</span><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b><span>0</span>
+        <span>0</span><b>1</b><span>0</span><b>1</b><span>0</span><span>0</span><b>1</b><b>1</b>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><span>0</span><b>1</b><b>1</b>
+        <span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><b>1</b><span>0</span><span>0</span>
+        <span>0</span><b>1</b><b>1</b><span>0</span><b>1</b><span>0</span><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><span>0</span><b>1</b><b>1</b><b>1</b><b>1</b>
+        <span>0</span><b>1</b><b>1</b><span>0</span><b>1</b><b>1</b><b>1</b><span>0</span>
+        <span>0</span><span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span><span>0</span>
+        <span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><b>1</b><span>0</span><span>0</span>
+        <span>0</span><span>0</span><b>1</b><span>0</span><span>0</span><b>1</b><b>1</b><b>1</b>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><b>1</b>
+        <span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><span>0</span><b>1</b><b>1</b>
+        <span>0</span><b>1</b><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><b>1</b><span>0</span><b>1</b>
+        <span>0</span><b>1</b><b>1</b><b>1</b><span>0</span><b>1</b><span>0</span><span>0</span>
+        <span>0</span><span>0</span><span>0</span><span>0</span><b>1</b><b>1</b><span>0</span><b>1</b>
+        <span>0</span><span>0</span><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b><span>0</span>
+        <span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span><span>0</span><b>1</b>
+        <span>0</span><b>1</b><span>0</span><span>0</span><b>1</b><b>1</b><span>0</span><span>0</span>
+        <span>0</span><b>1</b><span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span>
+        <span>0</span><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span><span>0</span><span>0</span>
+        <span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span><span>0</span><b>1</b>
+        <span>0</span><span>0</span><b>1</b><span>0</span><b>1</b><b>1</b><span>0</span><span>0</span>
+        <span>0</span><span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span><span>0</span>
+        <span>0</span><b>1</b><span>0</span><b>1</b><span>0</span><b>1</b><b>1</b><b>1</b>
+        <span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span><span>0</span><b>1</b>
+        <span>0</span><b>1</b><span>0</span><span>0</span><b>1</b><b>1</b><b>1</b><span>0</span>
+        <span>0</span><b>1</b><span>0</span><span>0</span><b>1</b><b>1</b><b>1</b><span>0</span>
+        <span>0</span><span>0</span><b>1</b><span>0</span><b>1</b><b>1</b><span>0</span><span>0</span>
+        <span>0</span><span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><span>0</span><span>0</span>
+        <span>0</span><b>1</b><span>0</span><span>0</span><b>1</b><b>1</b><b>1</b><span>0</span>
+        <span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b>
+        <span>0</span><b>1</b><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b><b>1</b>
+        <span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><b>1</b><b>1</b><span>0</span>
+        <span>0</span><b>1</b><span>0</span><span>0</span><span>0</span><b>1</b><span>0</span><b>1</b>
+        <span>0</span><b>1</b><span>0</span><b>1</b><span>0</span><b>1</b><span>0</span><b>1</b>
+    </p>
+</body>
+
+</html>
